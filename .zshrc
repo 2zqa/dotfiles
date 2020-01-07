@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH="/home/marijnk/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 # Prompt theme
 ZSH_THEME="robbyrussell"
@@ -12,9 +12,6 @@ ZSH_THEME="robbyrussell"
 plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
-
-# User configuration
-path+=('/home/marijnk/bin')
 
 # Install Ruby Gems to ~/gems
 export GEM_HOME="$HOME/gems"
@@ -45,10 +42,14 @@ function TRAPINT() {
   return $(( 128 + $1 ))
 } 
 
+# Set editor
+export EDITOR=/usr/bin/vim
+export VISUAL=$EDITOR
+
 # Aliases
-alias zshconfig="vim ~/.zshrc"
+alias zshconfig="vim $HOME/.zshrc"
 alias pwd='pwd -P'
-alias fbserver='wine /home/marijnk/.wine/drive_c/Program\ Files/RelSQL/Firebird/bin/fbserver -a'
+alias fbserver='wine $HOME/.wine/drive_c/Program\ Files/RelSQL/Firebird/bin/fbserver -a'
 alias lsblk='lsblk -e7'
 alias ls='ls --color --group-directories-first'
 alias copy='xclip -selection clipboard'
