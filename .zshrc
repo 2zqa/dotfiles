@@ -47,9 +47,12 @@ export EDITOR=/usr/bin/vim
 export VISUAL=$EDITOR
 
 # Aliases
-alias zshconfig="vim $HOME/.zshrc"
+alias zshconfig="$EDITOR $HOME/.zshrc"
 alias pwd='pwd -P'
 alias fbserver='wine $HOME/.wine/drive_c/Program\ Files/RelSQL/Firebird/bin/fbserver -a'
 alias lsblk='lsblk -e7'
-alias ls='ls --color --group-directories-first'
 alias copy='xclip -selection clipboard'
+
+# Colors
+alias ls='ls --color --group-directories-first'
+alias ip='ip -c'
