@@ -13,9 +13,9 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
-# Install Ruby Gems to ~/gems
-export GEM_HOME="$HOME/gems"
-export PATH="$HOME/gems/bin:$PATH"
+# Install Ruby Gems to ~/.gems
+export GEM_HOME="$HOME/.gems"
+export PATH="$HOME/.gems/bin:$PATH"
 
 # Set vim bindings and add right prompt (credits: Paweł Gościcki)
 # Source: http://pawelgoscicki.com/archives/2012/09/vi-mode-indicator-in-zsh-prompt/
@@ -50,8 +50,10 @@ export VISUAL=$EDITOR
 alias zshconfig="$EDITOR $HOME/.zshrc"
 alias pwd='pwd -P'
 alias fbserver='wine $HOME/.wine/drive_c/Program\ Files/RelSQL/Firebird/bin/fbserver -a'
-alias lsblk='lsblk -e7'
 alias copy='xclip -selection clipboard'
+
+# Hide ugly snap entries
+alias lsblk='lsblk -e7'
 
 # Colors
 alias ls='ls --color --group-directories-first'
