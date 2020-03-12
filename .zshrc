@@ -51,6 +51,7 @@ alias zshconfig="$EDITOR $HOME/.zshrc"
 alias pwd='pwd -P'
 alias fbserver='wine $HOME/.wine/drive_c/Program\ Files/RelSQL/Firebird/bin/fbserver -a'
 alias copy='xclip -selection clipboard'
+alias vim='nvim'
 
 # Hide ugly snap entries
 alias lsblk='lsblk -e7'
