@@ -55,6 +55,7 @@ alias srv='bundle exec jekyll serve'
 
 # Add ~/bin to path
 export PATH="$HOME/bin:$PATH"
+alias vim='nvim'
 
 # Hide ugly snap entries
 alias lsblk='lsblk -e7'
