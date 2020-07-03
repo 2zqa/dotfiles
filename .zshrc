@@ -43,8 +43,11 @@ function TRAPINT() {
 } 
 
 # Set editor
-export EDITOR=/usr/bin/vim
+export EDITOR=/usr/bin/nvim
 export VISUAL=$EDITOR
+
+# Add ~/bin to path
+export PATH="$HOME/bin:$PATH"
 
 # Aliases
 alias zshconfig="$EDITOR $HOME/.zshrc"
@@ -52,9 +55,6 @@ alias pwd='pwd -P'
 alias fbserver='wine $HOME/.wine/drive_c/Program\ Files/RelSQL/Firebird/bin/fbserver -a'
 alias copy='xclip -selection clipboard'
 alias srv='bundle exec jekyll serve'
-
-# Add ~/bin to path
-export PATH="$HOME/bin:$PATH"
 alias vim='nvim'
 
 # Hide ugly snap entries
