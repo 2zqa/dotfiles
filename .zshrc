@@ -46,12 +46,15 @@ function TRAPINT() {
 export EDITOR=/usr/bin/vim
 export VISUAL=$EDITOR
 
+# Functions
+mkcd() { mkdir -p "$1" && cd "$1"; }
+
 # Aliases
 alias zshconfig="$EDITOR $HOME/.zshrc"
 alias pwd='pwd -P'
 alias fbserver='wine $HOME/.wine/drive_c/Program\ Files/RelSQL/Firebird/bin/fbserver -a'
 alias copy='xclip -selection clipboard'
-alias vim='nvim'
+alias please='sudo $(history -p !!)'
 
 # Hide ugly snap entries
 alias lsblk='lsblk -e7'
