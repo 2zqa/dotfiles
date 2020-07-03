@@ -1,0 +1,14 @@
+#!/bin/sh
+CURRENT_THEME=$(gsettings get org.gnome.desktop.interface gtk-theme)
+
+LIGHT_THEME=$1
+DARK_THEME=$2
+
+if [ $CURRENT_THEME = $DARK_THEME ]; then
+
+	gsettings set org.gnome.shell.extensions.user-theme name $LIGHT_THEME
+	gsettings set org.gnome.desktop.interface gtk-theme $LIGHT_THEME
+else
+	gsettings set org.gnome.shell.extensions.user-theme name $DARK_THEME
+	gsettings set org.gnome.desktop.interface gtk-theme $DARK_THEME
+fi
