@@ -43,8 +43,11 @@ function TRAPINT() {
 } 
 
 # Set editor
-export EDITOR=/usr/bin/vim
+export EDITOR=/usr/bin/nvim
 export VISUAL=$EDITOR
+
+# Add ~/bin to path
+export PATH="$HOME/bin:$PATH"
 
 # Functions
 mkcd() { mkdir -p "$1" && cd "$1"; }
@@ -55,6 +58,8 @@ alias pwd='pwd -P'
 alias fbserver='wine $HOME/.wine/drive_c/Program\ Files/RelSQL/Firebird/bin/fbserver -a'
 alias copy='xclip -selection clipboard'
 alias please='sudo $(history -p !!)'
+alias srv='bundle exec jekyll serve'
+alias vim='nvim'
 
 # Hide ugly snap entries
 alias lsblk='lsblk -e7'
