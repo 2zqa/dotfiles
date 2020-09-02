@@ -42,6 +42,11 @@ function TRAPINT() {
   return $(( 128 + $1 ))
 } 
 
+# Tilix
+if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
+        source /etc/profile.d/vte.sh
+fi
+
 # Set editor
 export EDITOR=/usr/bin/nvim
 export VISUAL=$EDITOR
