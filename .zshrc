@@ -55,7 +55,11 @@ export VISUAL=$EDITOR
 export PATH="$HOME/bin:$PATH"
 
 # Functions
-mkcd() { mkdir -p "$1" && cd "$1"; }
+mkcdir ()
+{
+    mkdir -p -- "$1" &&
+    cd -P -- "$1"
+}
 
 # Aliases
 alias zshconfig="$EDITOR $HOME/.zshrc"
@@ -65,6 +69,7 @@ alias copy='xclip -selection clipboard'
 alias please='sudo $(history -p !!)'
 alias srv='bundle exec jekyll serve'
 alias vim='nvim'
+alias mkdir='mkdir -p'
 
 # Hide ugly snap entries
 alias lsblk='lsblk -e7'
