@@ -55,7 +55,7 @@ export VISUAL=$EDITOR
 export PATH="$HOME/bin:$PATH"
 
 # Functions
-mkcdir ()
+mkcd ()
 {
     mkdir -p -- "$1" &&
     cd -P -- "$1"
