@@ -63,17 +63,11 @@ mkcd ()
 
 # Aliases
 alias zshconfig="$EDITOR $HOME/.zshrc"
+alias zshupdateconfig="source $HOME/.zshrc"
 alias pwd='pwd -P'
-alias fbserver='wine $HOME/.wine/drive_c/Program\ Files/RelSQL/Firebird/bin/fbserver -a'
-alias copy='xclip -selection clipboard'
-alias please='sudo $(history -p !!)'
-alias srv='bundle exec jekyll serve'
-alias vim='nvim'
-alias mkdir='mkdir -p'
+alias wl-copy='wl-copy --trim-newline'
+alias ls='ls --color --group-directories-first'
+alias ip='ip -c'
 
 # Hide ugly snap entries
 alias lsblk='lsblk -e7'
-
-# Colors
-alias ls='ls --color --group-directories-first'
-alias ip='ip -c'
