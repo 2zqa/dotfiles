@@ -13,10 +13,6 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
-# Install Ruby Gems to ~/.gems
-export GEM_HOME="$HOME/.gems"
-export PATH="$HOME/.gems/bin:$PATH"
-
 # Set vim bindings and add right prompt (credits: Paweł Gościcki)
 # Source: http://pawelgoscicki.com/archives/2012/09/vi-mode-indicator-in-zsh-prompt/
 bindkey -v
@@ -51,8 +47,9 @@ fi
 export EDITOR=/usr/bin/nvim
 export VISUAL=$EDITOR
 
-# Add ~/bin to path
-export PATH="$HOME/bin:$PATH"
+# Path
+path+="$HOME/bin"
+path+="$HOME/.config/home/marijnk/.config/composer/vendor/bin"
 
 # Functions
 mkcd ()
