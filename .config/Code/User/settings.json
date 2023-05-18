@@ -1,0 +1,38 @@
+{
+    // Theme
+    "workbench.preferredDarkColorTheme": "Adwaita Dark",
+    "workbench.preferredLightColorTheme": "Adwaita Light",
+    "window.autoDetectColorScheme": true,
+    "workbench.colorTheme": "Adwaita Light",
+    "workbench.productIconTheme": "adwaita",
+    "editor.fontFamily": "'Fira Code'",
+    "editor.fontLigatures": true,
+
+    // VSCode
+    "update.mode": "none",
+    "workbench.startupEditor": "none",
+    "breadcrumbs.enabled": false,
+    "editor.inlineSuggest.enabled": true,
+    "editor.minimap.enabled": false,
+    "terminal.integrated.enablePersistentSessions": false,
+
+    // Files
+    "files.eol": "\n",
+    "files.insertFinalNewline": true,
+    "files.trimTrailingWhitespace": true,
+    "files.autoSave": "afterDelay",
+
+    // Copilot
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false,
+        "graphql": true
+    },
+
+    // == Languages ==
+    // Go
+    "go.survey.prompt": false,
+    "go.toolsManagement.checkForUpdates": "local"
+}
