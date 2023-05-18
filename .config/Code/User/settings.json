@@ -34,5 +34,11 @@
     // == Languages ==
     // Go
     "go.survey.prompt": false,
-    "go.toolsManagement.checkForUpdates": "local"
+    "go.toolsManagement.checkForUpdates": "local",
+    "git.confirmSync": false,
+
+    // GraphQL
+    "[graphql]": {
+        "diffEditor.ignoreTrimWhitespace": false
+    }
 }
