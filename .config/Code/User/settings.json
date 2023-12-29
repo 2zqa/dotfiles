@@ -1,44 +1,88 @@
 {
-    // Theme
-    "workbench.preferredDarkColorTheme": "Adwaita Dark",
-    "workbench.preferredLightColorTheme": "Adwaita Light",
-    "window.autoDetectColorScheme": true,
-    "workbench.colorTheme": "Adwaita Light",
-    "workbench.productIconTheme": "adwaita",
-    "editor.fontFamily": "'Fira Code'",
-    "editor.fontLigatures": true,
-
-    // VSCode
+    // General
     "update.mode": "none",
     "workbench.startupEditor": "none",
     "breadcrumbs.enabled": false,
+    "terminal.integrated.enablePersistentSessions": false,
+    "window.zoomLevel": 1,
+    "window.titleBarStyle": "custom",
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "workbench.layoutControl.enabled": false,
+    "debug.toolBarLocation": "commandCenter",
+    // Editor
     "editor.inlineSuggest.enabled": true,
     "editor.minimap.enabled": false,
-    "terminal.integrated.enablePersistentSessions": false,
-
+    "editor.formatOnSave": true,
+    "editor.fontFamily": "Fira Code",
+    "editor.fontLigatures": false,
+    // Git
+    "git.enableSmartCommit": true,
+    "git.confirmSync": false,
+    "git.openRepositoryInParentFolders": "never",
     // Files
     "files.eol": "\n",
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
     "files.autoSave": "afterDelay",
-
     // Copilot
     "github.copilot.enable": {
         "*": true,
         "plaintext": false,
         "markdown": false,
         "scminput": false,
-        "graphql": true
+        "python": true
     },
-
+    "github.copilot.editor.enableCodeActions": false,
+    // Git lens
+    "gitlens.graph.minimap.enabled": false,
+    "gitlens.defaultGravatarsStyle": "identicon",
+    "gitlens.plusFeatures.enabled": false,
+    "gitlens.virtualRepositories.enabled": false,
+    "gitlens.hovers.enabled": false,
+    "gitlens.views.commits.avatars": false,
+    "gitlens.views.commitDetails.avatars": false,
+    "gitlens.views.repositories.avatars": false,
+    "gitlens.views.fileHistory.avatars": false,
+    "gitlens.views.lineHistory.avatars": false,
+    "gitlens.views.branches.avatars": false,
+    "gitlens.views.remotes.avatars": false,
+    "gitlens.views.tags.avatars": false,
+    "gitlens.views.worktrees.avatars": false,
+    "gitlens.views.contributors.avatars": false,
+    "gitlens.views.searchAndCompare.avatars": false,
+    "gitlens.views.workspaces.avatars": false,
+    "gitlens.views.patchDetails.avatars": false,
+    "gitlens.blame.avatars": false,
+    "gitlens.graph.avatars": false,
     // == Languages ==
     // Go
     "go.survey.prompt": false,
     "go.toolsManagement.checkForUpdates": "local",
-    "git.confirmSync": false,
-
-    // GraphQL
-    "[graphql]": {
-        "diffEditor.ignoreTrimWhitespace": false
-    }
+    // Python
+    "[python]": {
+        "diffEditor.ignoreTrimWhitespace": false,
+        "editor.formatOnType": true,
+        "editor.wordBasedSuggestions": "off",
+        "editor.rulers": [
+            120
+        ],
+    },
+    // Dart
+    "[dart]": {
+        "editor.formatOnSave": true,
+        "editor.formatOnType": true,
+        "editor.rulers": [
+            80
+        ],
+        "editor.selectionHighlight": false,
+        "editor.suggestSelection": "first",
+        "editor.tabCompletion": "onlySnippets",
+        "editor.wordBasedSuggestions": "off",
+    },
+    // Theme
+    "window.autoDetectColorScheme": true,
+    "workbench.preferredDarkColorTheme": "Default Dark Modern",
+    "workbench.preferredLightColorTheme": "Default Light Modern",
+    "workbench.colorTheme": "Default Light Modern"
 }
