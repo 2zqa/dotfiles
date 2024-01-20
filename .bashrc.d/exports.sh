@@ -2,6 +2,9 @@
 export EDITOR=/usr/bin/nvim
 export VISUAL=$EDITOR
 
+# Hardware acceleration on Intel
+export LIBVA_DRIVER_NAME=iHD
+
 # Path
 export PATH="$HOME/go/bin:$PATH"
 
