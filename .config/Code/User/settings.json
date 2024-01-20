@@ -10,6 +10,9 @@
     "explorer.confirmDragAndDrop": false,
     "workbench.layoutControl.enabled": false,
     "debug.toolBarLocation": "commandCenter",
+    "window.autoDetectColorScheme": true,
+    "workbench.preferredDarkColorTheme": "Default Dark Modern",
+    "workbench.preferredLightColorTheme": "Default Light Modern",
     // Editor
     "editor.inlineSuggest.enabled": true,
     "editor.minimap.enabled": false,
@@ -20,6 +23,8 @@
     "git.enableSmartCommit": true,
     "git.confirmSync": false,
     "git.openRepositoryInParentFolders": "never",
+    "git.autofetch": true,
+    "git.detectSubmodules": false,
     // Files
     "files.eol": "\n",
     "files.insertFinalNewline": true,
@@ -80,9 +85,4 @@
         "editor.tabCompletion": "onlySnippets",
         "editor.wordBasedSuggestions": "off",
     },
-    // Theme
-    "window.autoDetectColorScheme": true,
-    "workbench.preferredDarkColorTheme": "Default Dark Modern",
-    "workbench.preferredLightColorTheme": "Default Light Modern",
-    "workbench.colorTheme": "Default Light Modern"
 }
